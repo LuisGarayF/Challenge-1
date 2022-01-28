@@ -11,7 +11,7 @@ height: 10%;
 }
 
 h1 {
-    color:darkblue;
+    color:white;
     text-align: center;
     padding: 4px;
     margin: 8px;
@@ -23,7 +23,7 @@ h1 {
 }
 
 body {
-    background-color: lightgray;
+    background-color: #1D1F20;
     display: grid;
     place-items: center;
     height: 70%;
@@ -42,33 +42,61 @@ body {
 
 
 .container div{
-    background-color: lightgray;
     width: 100%;
     margin: 10px; 
-    border: 1px solid red;
     display: flex;
 }
 
 .button {
-    padding-left: 8 px;
-    padding-right: 8 px;
-    padding-top: 5 px;
-    padding-bottom: 5 px;
     margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    text-shadow: center;
-    color-scheme: transparent;
+    color: white;
     font-style: bold;
-    border-color: blue;
-    border-radius: 4px;
+    font-family: 'Helvetica';
+    font-size: 1.5rem;
+    text-align:center;
+    --borderWidth: 3px;
+    background: rgb(35, 35, 36);
+    position: relative;
+    border-radius: var(--borderWidth);  
 }
+
+.button:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease infinite;
+    background-size: 400% 400%;
+  }
+  
+  
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
 
 #ingreso, #salida {
     padding: 10px;
     margin: 10px;
     border:2px solid blue;
     border-radius: 5px;
-    border-color: inherit
+    border-color: inherit;
 }
 
 footer {
@@ -76,6 +104,7 @@ footer {
     font-style: Helvetica rounded;
     font-weight: bold;
     font-size: 14px;
+    color: white;
     padding: 10px;
     margin: 10px;
     border:2px solid blue;
