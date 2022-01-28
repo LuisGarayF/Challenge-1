@@ -1,10 +1,96 @@
-h1 {
-    text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Helvetica;
+}    
+
+header {
+height: 10%;
+
 }
 
-#container {
-    align-items: center;
-    grid-auto-flow: center;
-    grid-auto-flow: center;
+h1 {
+    color:darkblue;
+    text-align: center;
+    padding: 4px;
+    margin: 8px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: Helvetica;
+}
 
+body {
+    background-color: lightgray;
+    display: grid;
+    place-items: center;
+    height: 70%;
+
+}
+
+
+.container {
+    height: 400px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+
+.container div{
+    background-color: lightgray;
+    width: 100%;
+    margin: 10px; 
+    border: 1px solid red;
+    display: flex;
+}
+
+.button {
+    padding-left: 8 px;
+    padding-right: 8 px;
+    padding-top: 5 px;
+    padding-bottom: 5 px;
+    margin: 5px;
+    width: 100%;
+    text-shadow: center;
+    color-scheme: transparent;
+    font-style: bold;
+    border-color: blue;
+    border-radius: 4px;
+}
+
+#ingreso, #salida {
+    padding: 10px;
+    margin: 10px;
+    border:2px solid blue;
+    border-radius: 5px;
+    border-color: inherit
+}
+
+footer {
+    display: flex;
+    font-style: Helvetica rounded;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    margin: 10px;
+    border:2px solid blue;
+    border-radius: 5px;
+    border-color: inherit
+    height: 20%;
+}
+
+.buttons {
+    height: 200px;
+    padding: 4 px;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
 }

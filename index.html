@@ -4,29 +4,37 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-        <script src="js/main.js"></script>
+        <link href="../css/style.css" rel="stylesheet">
+        <!--<script src="https://cdn.tailwindcss.com"></script>  -->
+        <script src="../js/main.js" defer></script>
     </head>
     <body>
-
-        <header class="header">
-            <h1>Encriptador de texto</h1>
+        <header>
+            <title>Código Secreto</title>
+            <h1>Código Secreto</h1>
         </header>
-
         <div class="container">
-            <textarea id="ingreso" rows="10" cols="40" placeholder="Ingrese su texto aquí"></textarea>
-            <textarea id="salida" rows="10" cols="40"></textarea>
-            <br><br>
-            <button type="submit" class="btn-e">Encriptar</button>
-            <button type="submit" class="btn-d">Desencriptar</button>
-            <button type="submit" class="btn-c">Copiar</button>
-
+            <div class="entrada" style="order: 1; flex-grow: 4;">  
+                <textarea class="" id="ingreso" rows="10" cols="40" placeholder="Ingrese su texto aquí"></textarea>
+            </div>         
+            <div class="buttons"  style="order: 2; flex-grow:2;">
+                <button type="button" id = "btn-encriptar" class="button" onclick="encriptar()">Encriptar</button>
+                <button type="button" id = "btn-desencriptar" class="button" onclick="desencriptar()">Desencriptar</button>
+                <button type="buttom" id = "copiar" class="button" onclick="copiar()">Copiar y Pegar</button>
+                <button id = "btn-clear" type="button" class="button" value="Refrescar" onclick="clear()">Refrescar</button>
+                <!--<button type="buttom" id = "btn-clear" class="" onclick="clear()">Eliminar</button>-->
+              </div> 
+              <div class="salida"  style="order: 3; flex-grow: 4;"> 
+                <textarea class="border-2 hover:border-t-4 p-4" id="salida" rows="10" cols="40"></textarea>  
+            </div>           
+            <br>
+            <br>
         </div>
-
-
-        <footer>
-            
+        <footer class="footer">
+            <p class="copyright text-sm text-blue-600 font-bold">Challenge 1: </p><br>
+                 <p>Realizado por Luis Garay para Alura Latam / Oracle <a href ="https://www.linkedin.com/in/luisgarayfuentes/"></a></p>
         </footer>
     
     </body>
+
 </html>
