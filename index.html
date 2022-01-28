@@ -5,8 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="./css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
         <script src="./js/main.js" defer></script>
-    </head>
+        </head>
     <body>
         <header>
             <title>Código Secreto</title>
@@ -24,15 +26,46 @@
                 <button id = "btn-clear" type="button" class="button" value="Refrescar" onclick="clear()">Refrescar</button>
             </div> 
             <div class="salida"  style="order: 3;"> 
-                <textarea class="border-2 hover:border-t-4 p-4" id="salida" rows="10" cols="40"></textarea>  
+                <textarea class="border-2 hover:border-t-4 p-4" id="salida" rows="10" cols="40" placeholder="El resultado se mostrará aquí"></textarea>  
             </div>           
             <br>
             <br>
         </div>
         <footer class="footer">
-            <p class="copyright">Challenge 1: </p><br>
-                 <p>Realizado por Luis Garay para Alura Latam / Oracle <a href ="https://www.linkedin.com/in/luisgarayfuentes/"></a></p>
-        </footer>
+            <div class="container-2">
+              <div class="row">
+                <div>
+                  <p><h6>Challenge 1 </h6></p><br>
+                  <p class="text-justify">Se trata de una web que encripta textos, para intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.</p>
+                  <p>Requisitos:</p>
+                  <p>- Funciona solo con letras minúsculas</p>
+                  <p>- No deben ser utilizados letras con acentos ni caracteres especiales</p>
+                  <p>- Puede copiar y pegar el texto resultante automaticamente mediante el botón Copiar y Pegar.</p>
+                  <br>
+                  <p></p>
+                </div>
+             </div>
+             
+            </div>
+            <hr>
+            <div class="container-2">
+              <div class="row">
+                <div class="">
+                    <br>
+                  <p class="copyright">Copyright &copy; 2022 Realizado por Luis Garay F. para  
+                 <a href="#">Alura Latam - Oracle</a>.
+                  </p>
+                </div>
+            <div>
+                  <ul class="social-icons">
+                    <li><a class="twitter" href="https://twitter.com/ryukansen"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="github" href="https://github.com/LuisGarayF"><i class="fab fa-github"></i></a></li>
+                    <li><a class="linkedin" href="https://www.linkedin.com/in/luisgarayfuentes/" target="_blank"><i class="fab fa-linkedin"></i></a></li>   
+                  </ul>
+                </div>
+              </div>
+            </div>
+      </footer>
     
     </body>
 

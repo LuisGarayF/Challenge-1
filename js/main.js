@@ -38,6 +38,7 @@ function encriptar(){
     let newText = input.replace(/i/g, "imes").replace(/e/g, "enter").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
     document.getElementById("salida").innerHTML=newText;
     document.getElementById("ingreso").value = "";
+    verificar();
 
 }
 
@@ -47,6 +48,8 @@ function desencriptar(){
     let newText = input.replace(/imes/g, "i").replace(/enter/g, "e").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
     document.getElementById("salida").innerHTML=newText;
     document.getElementById("ingreso").value = "";
+    document.getElementById("salida").focus();
+    verificar();
 
 }
 
@@ -59,16 +62,12 @@ function copiar(){
     document.getElementById("ingreso").value = document.getElementById("salida").value;
     //document.getElementById("salida").value=" ";  
     console.log(copiado);
+    verificar();
 }
 
 function clear(){
     document.location.reload(true);
     document.getElementById("ingreso").focus();
-    /*let out = document.getElementById("salida");
-    let input = document.getElementById("ingreso");
-    input.value = '';
-    out.value = '';*/
-
 }
 
 function verificar(input){
