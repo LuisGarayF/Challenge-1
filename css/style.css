@@ -80,8 +80,9 @@ footer {
     margin: 10px;
     border:2px solid blue;
     border-radius: 5px;
-    border-color: inherit
-    height: 20%;
+    border-color: inherit;
+    height:20%;
+
 }
 
 .buttons {
